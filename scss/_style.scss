@@ -1,0 +1,171 @@
+.position-absolute {
+    z-index: 1;
+}
+
+.carousel-inner {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.slider-text {
+    margin-top: 20%;
+    width: 100%;
+}
+
+.slider-text2 {
+    margin-top: 25%;
+    width: 100%;
+}
+
+.slider-button {
+    margin-top: 30%;
+    width: 150px;
+    margin-left: 45%;
+}
+
+.divider {
+    color: rgb(23, 218, 163);
+    font-weight: 1000;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.circle {
+    background-color: rgb(237, 239, 240);
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+    transition-property: all;
+
+    &:hover {
+        background-color: rgb(23, 218, 163);
+    }
+}
+
+.about-col-text {
+    line-height: 25px;
+}
+
+.about-learnMore,
+.info1-learnMore,
+.info2-learnMore {
+    background-color: rgb(23, 218, 163);
+    color: white;
+    font-weight: 600;
+}
+
+.info1-col-text,
+.info2-col-text {
+    line-height: 35px;
+}
+
+$color1: rgb(23, 218, 163);
+$backgroundcolor1: rgb(23, 218, 163);
+
+.color1 {
+    color: $color1;
+}
+
+.backgroundcolor1 {
+    background-color: $backgroundcolor1;
+}
+
+
+$color: #fff;
+
+.search {
+    display: table;
+
+    input {
+        background: none;
+        border: none;
+        outline: none;
+        width: 28px;
+        min-width: 0;
+        padding: 0;
+        z-index: 1;
+        position: relative;
+        line-height: 18px;
+        margin: 5px 0;
+        font-size: 14px;
+        -webkit-appearance: none;
+        font-family: 'Mukta Malar';
+        transition: all .6s ease;
+        cursor: pointer;
+        color: $color;
+
+        &+div {
+            position: relative;
+            height: 28px;
+            width: 100%;
+            margin: -28px 0 0 0;
+
+            svg {
+                display: block;
+                position: absolute;
+                height: 28px;
+                width: 160px;
+                right: 0;
+                top: 0;
+                fill: none;
+                stroke: $color;
+                stroke-width: 1.5px;
+                stroke-dashoffset: 212.908 + 59;
+                stroke-dasharray: 59 212.908;
+                transition: all .6s ease;
+            }
+        }
+
+        &:not(:placeholder-shown),
+        &:focus {
+            width: 160px;
+            padding: 0 4px;
+            cursor: text;
+
+            &+div {
+                svg {
+                    stroke-dasharray: 150 212.908;
+                    stroke-dashoffset: 300;
+                }
+            }
+        }
+    }
+}
+
+::selection {
+    background: rgba(#fff, .2);
+}
+
+::-moz-selection {
+    background: rgba(#fff, .2);
+}
+
+
+
+.carousel-caption {
+    top: 35%;
+}
+
+.mainsquare,
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 100vmin;
+    height: 380.59px;
+}
+
+.symutext {
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+}
+
+.lastButton {
+    top: 50%;
+    left: 46%;
+    z-index: 1;
+}
